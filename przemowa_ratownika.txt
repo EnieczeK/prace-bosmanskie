@@ -39,7 +39,7 @@ SLAJD 7: Węzły Łączące Liny - WĘZEŁ PŁASKI
 ---
 SLAJD 8: Węzły Łączące Liny - WĘZEŁ SZOTOWY
 
-"Płaski to nie wszystko. W prawdziwej akcji często macie cienką linkę z boi i grubą rzutkę. I tu wchodzi on – Węzeł Szotowy. Niezbędny do łączenia lin o skrajnie różnej grubości. Bardzo mocny i rewelacyjny do rozwiązywania – po obciążeniu wystarczy przełamać splot kciukiem. Ćwiczymy!"
+"Płaski to nie wszystko. W prawdziwej akcji często macie cienką linkę z boi i grubą rzutkę. I tu wchodzi on – Węzeł Szotowy. Niezbędny do łączenia lin o skrajnie różnej grubości. Bardzo mocny i rewelacyjny do rozwiązywania – nawet po holowaniu czy ogromnym szarpaniu, gdy tylko lina straci naprężenie (po odciążeniu), splot nie zakleszcza się na beton i wystarczy przełamać go kciukiem. Ćwiczymy!"
 
 ---
 SLAJD 9: Podsumowanie
