@@ -387,3 +387,52 @@ p, ul, li, .placeholder-text {
 /* Kolumny opóźnione żeby pojawiły się po nagłówku */
 .slide.active .content .two-columns > .col:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.6s; }
 .slide.active .content .two-columns > .col:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.8s; }
+
+/* ========================================= */
+/* WIDOK DLA TELEFONÓW (RESPONSYWNOŚĆ RWD)  */
+/* ========================================= */
+@media screen and (max-width: 800px), screen and (max-height: 500px) {
+    .border-wrapper { border-width: 8px; }
+    
+    .footer-br { bottom: 15px; right: 15px; }
+    .footer-line { width: 60px; margin-bottom: 4px; }
+    .footer-slaskie { font-size: 10px; letter-spacing: 1px; }
+    .footer-wopr { font-size: 16px; }
+    
+    .logo-small-tr { top: 15px; right: 15px; width: 50px; }
+    
+    .main-logo { width: 40%; margin-bottom: 20px; }
+    .main-title { font-size: 12vw; }
+    .sub-title { font-size: 5vw; }
+    .author-title { font-size: 4vw; }
+    
+    .content-text { padding: 60px 5% 70px 5%; }
+    
+    .slide-header { font-size: 6vw; margin-bottom: 20px; }
+    
+    /* Układ pionowy na telefony */
+    .two-columns { 
+        flex-direction: column; 
+        gap: 15px; 
+        overflow-y: auto; /* Zezwala na przewijanie tekstu na małym ekranie */
+        padding-right: 5px; /* miejsce na pasek przewijania */
+    }
+    
+    .text-content p, .text-content ul { font-size: 4vw; }
+    .text-content li { margin-bottom: 5px; }
+    
+    .animation-container {
+        max-height: 30vh; /* Zmniejszona wysokość na pionowym ekranie, by zostawić miejsce na tekst */
+    }
+    
+    .animation-container.half-height {
+        max-height: 30vh;
+    }
+
+    .video-caption { font-size: 3.5vw; }
+    
+    #presentation-timer {
+        bottom: 15px; left: 15px;
+        font-size: 12px; padding: 4px 8px;
+    }
+}
