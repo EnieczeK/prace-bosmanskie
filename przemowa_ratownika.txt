@@ -1,0 +1,54 @@
+STRUKTURA WYSTĄPIENIA (Czas trwania: ok. 15 minut)
+
+UWAGA TECHNICZNA: W lewym dolnym rogu ekranu działa zaprogramowany minutnik. Włączy się automatycznie, gdy zmienisz slajd tytułowy na drugi. Gdy zostanie 1 minuta do końca, licznik zmieni kolor na czerwony i zacznie pulsować - to dla Ciebie znak, by przejść do slajdu "Podsumowanie".
+
+---
+SLAJD 1: Tytułowy / SLAJD 2: Prace Bosmańskie
+(Stoisz swobodnie, uśmiechasz się. Nawiązujesz kontakt wzrokowy)
+
+"Dzień dobry państwu, nazywam się Mikołaj Skorupa i jestem ratownikiem Oddziału Miejskiego WOPR w Katowicach. Dzisiaj poprowadzę dla Was krótki, 15-minutowy warsztat dotyczący absolutnej podstawy naszego fachu – prac bosmańskich. Mówiąc prościej: sztuki wiązania pewnych węzłów. "
+
+---
+SLAJD 3: Zakres tematyczny
+
+"Agenda na dzisiejszy kwadrans jest bardzo konkretna. Na początek omówimy, dlaczego jeden źle zawiązany supeł może zaważyć na ludzkim życiu, a chwilę później przejdziemy do głównej części warsztatowej. Poznamy trzy absolutnie najważniejsze węzły w WOPR: ratowniczy, cumowniczy oraz węzły łączące (płaski i szotowy). Ponieważ mamy mało czasu, działamy interaktywnie. Proszę, abyście w trakcie moich instrukcji na bieżąco brali liny do rąk i ćwiczyli. Jeśli coś jest niejasne, od razu przerywajcie i pytajcie."
+
+---
+SLAJD 4: Zasady prac bosmańskich
+(Podkreślasz ważność słów mocnym głosem)
+
+"Każdy element naszego sprzętu: boja SP, rzutka rękawowa, łódź hybrydowa, jest bezużyteczny, jeśli nie potraficie ich pewnie zamocować. Zapamiętajcie złotą zasadę każdego wodniaka: węzeł musi trzymać jak stalowy zacisk podczas akcji, ale po jej zakończeniu musicie potrafić rozwiązać go błyskawicznie, bez szarpania się z liną. I jeszcze jedno (wskazujesz na pudełko 'Pamiętaj') - mokra lina w wodzie pracuje zupełnie inaczej niż na sali wykładowej. Zły węzeł potrafi po prostu po niej zjechać."
+
+---
+SLAJD 5: Węzeł Ratowniczy (Skrajny Tatrzański)
+(Bierzesz do ręki linę)
+
+"Zaczynamy od absolutnego króla - Węzeł Ratowniczy, inaczej Skrajny Tatrzański. Jego zadaniem jest zrobienie pętli, która za nic w świecie się nie zaciśnie. Jak mocno byś go nie ciągnął, pętla zachowa swój obwód. Wiążemy tym koła ratunkowe, asekurujemy siebie lub wiążemy to na poszkodowanym. Ten węzeł będziecie musieli umieć zawiązać całkowicie po omacku i to za pomocą tylko jednej ręki, bo drugą będziecie walczyć z nurtem lub asekurować poszkodowanego. Łapiemy za liny i próbujemy, jak na animacji!"
+
+---
+SLAJD 6: Węzeł Cumowniczy Żeglarski
+(Przechodzisz do drugiego ćwiczenia)
+
+"Kolejna sytuacja – dopływacie motorówką do pirsu. Musicie szybko przycumować i biec udzielać KPP. Używamy tu Węzła Cumowniczego w najpewniejszym wariancie: Półtora oplotu i dwa półsztyki. Siła naprężająca nie ciągnie za sam węzeł, tylko blokuje się poprzez tarcie na polerze (półtora oplotu wokół pala). Dwa półsztyki na końcu to tylko blokada. Nie zaciśnie się nawet na potężnych falach."
+
+---
+SLAJD 7: Węzły Łączące Liny - WĘZEŁ PŁASKI
+
+"Teraz sytuacja, gdy zrywa wam się rzutka, i chcecie ją przedłużyć. Czym łączycie liny? Czasem odruchowo ludzie robią pęczki. Najbardziej znany do łączenia jest węzeł płaski. Ale UWAGA: płaski służy WYŁĄCZNIE do lin o dokładnie takiej samej grubości i nieśliskich materiałów. Sprawdza się np. do zawiązania chusty trójkątnej na złamanej ręce poszkodowanego."
+
+---
+SLAJD 8: Węzły Łączące Liny - WĘZEŁ SZOTOWY
+
+"Płaski to nie wszystko. W prawdziwej akcji często macie cienką linkę z boi i grubą rzutkę. I tu wchodzi on – Węzeł Szotowy. Niezbędny do łączenia lin o skrajnie różnej grubości. Bardzo mocny i rewelacyjny do rozwiązywania – po obciążeniu wystarczy przełamać splot kciukiem. Ćwiczymy!"
+
+---
+SLAJD 9: Podsumowanie
+(Twój czas zbliża się do końca, minutnik zaczyna migać na czerwono)
+
+"Czas nam się kończy, więc szybkie podsumowanie. Po pierwsze: bezpieczeństwo to pewne mocowanie. Po drugie: węzeł ma trzymać mocno i puszczać szybko. I najważniejsze – w akcji stres jest ogromny, nie ma czasu na zastanawianie się: 'tu przekładam króliczkiem do norki'. Osiągacie automatyzm tylko poprzez ciągłą, codzienną praktykę. Pamięć mięśniowa."
+
+---
+SLAJD 10: Podziękowanie i bibliografia
+(Uśmiech na koniec)
+
+"Bardzo dziękuję za zaangażowanie na dzisiejszych zajęciach. Po wiedzę teoretyczną odsyłam do podręczników R. Karpińskiego czy P. Błasiaka. Natomiast do trenowania węzłów w domowym zaciszu, gorąco polecam aplikację Knots3D z genialnymi, trójwymiarowymi wizualizacjami splotów. Powodzenia na kolejnych egzaminach, macie jeszcze jakieś pytania?"

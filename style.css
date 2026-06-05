@@ -1,0 +1,389 @@
+:root {
+    --wopr-blue: #4B7BB2; /* Głębszy niebieski z logo WOPR */
+    --wopr-gold: #C0A16B; /* Złoty kolor obramowania */
+    --bg-color: #FFFFFF;
+    --font-main: 'Verdana', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--font-main);
+    overflow: hidden;
+    color: var(--wopr-blue);
+}
+
+/* GŁÓWNY KONTENER PREZENTACJI (Wypełnia cały ekran) */
+#presentation {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+/* POJEDYNCZY SLAJD */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* RAMKI ZEWNĘTRZNE - Idealne odwzorowanie ze zrzutów ekranu */
+.border-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Niebieska ramka zewnętrzna */
+    border: 15px solid var(--wopr-blue);
+}
+
+/* Złota ramka wewnętrzna realizowana przez ::after żeby nie psuła paddingów */
+.border-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid var(--wopr-gold);
+    pointer-events: none;
+}
+
+/* MAŁE LOGO PRAWY GÓRNY RÓG */
+.logo-small-tr {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 8%;
+    max-width: 120px;
+    z-index: 10;
+}
+
+/* STOPKA PRAWY DOLNY RÓG */
+.footer-br {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.footer-line {
+    width: 120px;
+    height: 2px;
+    background-color: var(--wopr-gold);
+    margin-bottom: 8px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.footer-slaskie {
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+}
+
+.footer-wopr {
+    font-size: 1.8vw;
+    letter-spacing: 0px;
+}
+
+/* ZAWWARTOŚĆ SLAJDU */
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 10%;
+    z-index: 5;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* SLAJD TYTUŁOWY ELEMENTY */
+.main-logo {
+    width: 25%;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+/* ZASADA MAKSYMALNIE DWA FORMATOWANIA NA SLAJD (z wyjątkiem oryginalnych tytułów) */
+/* 1. Format: Nagłówki i Wyróżnienia (Niebieski, Pogrubiony) */
+h1, h2, h3, strong, b, .main-title, .slide-header, .sub-title, .author-title, .footer-text {
+    color: var(--wopr-blue);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* 2. Format: Tekst zwykły (Szary, Normalny) */
+p, ul, li, .placeholder-text {
+    color: #333;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-title {
+    font-size: 6vw;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.sub-title {
+    font-size: 2vw;
+    margin-top: 10px;
+}
+
+.author-title {
+    font-size: 1.5vw;
+    margin-top: 20px;
+}
+
+.author-name {
+    font-weight: normal;
+    color: var(--wopr-blue);
+}
+
+/* SLAJDY Z TREŚCIĄ */
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 10% 120px 10%; /* Zwiększony dolny margines chroniący stopkę */
+}
+
+.slide-header {
+    font-size: 3vw;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 2px solid var(--wopr-gold);
+    padding-bottom: 15px;
+    display: inline-block;
+    align-self: center;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1; /* Pozwala elastycznie wypełnić miejsce pod nagłówkiem */
+    gap: 40px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content p {
+    font-size: 1.4vw;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.text-content ul {
+    font-size: 1.4vw;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.text-content li {
+    margin-bottom: 10px;
+}
+
+.info-box {
+    background-color: rgba(192, 161, 107, 0.1);
+    border: 2px dashed var(--wopr-gold);
+    border-radius: 10px;
+    padding: 30px;
+    height: fit-content;
+    align-self: center;
+}
+
+/* KONTENERY NA RENDEROWANIE ANIMACJI WEBP / MP4 */
+.animation-container {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    max-height: 55vh; /* Ograniczenie wysokości, żeby nie najeżdżało na stopkę */
+    background-color: #f0f4f8; 
+    border: 2px solid var(--wopr-blue);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-container.half-height {
+    max-height: 29vh; /* Bezpieczny rozmiar dla dwóch filmów z marginesem u dołu */
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.video-wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.video-caption {
+    font-size: 1.1vw;
+    color: var(--wopr-blue);
+    font-weight: bold;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.animation-container img,
+.animation-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* STEROWANIE PREZENTACJĄ */
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.5);
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+#presentation:hover .controls {
+    opacity: 1;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.controls button:hover {
+    color: var(--wopr-gold);
+}
+
+#slideCounter {
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* PASEK POSTĘPU */
+#progressBarContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(75, 123, 178, 0.1);
+    z-index: 100;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: var(--wopr-gold);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* MINUTNIK */
+#presentation-timer {
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--wopr-blue);
+    z-index: 10;
+    font-family: var(--font-main);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px;
+    border: 2px solid var(--wopr-gold);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#presentation-timer.time-warning {
+    color: #e74c3c;
+    border-color: #e74c3c;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* ANIMACJE POJAWIANIA SIĘ TEKSTU */
+.slide .content > *, .slide .content .two-columns > .col {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+/* Opóźnienia dla kolejnych elementów */
+.slide.active .content > *:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
+.slide.active .content > *:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
+.slide.active .content > *:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.5s; }
+
+/* Kolumny opóźnione żeby pojawiły się po nagłówku */
+.slide.active .content .two-columns > .col:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.6s; }
+.slide.active .content .two-columns > .col:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.8s; }
